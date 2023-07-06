@@ -1,0 +1,34 @@
+#navLi-container,
+#navBar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+#navLi-container {
+    flex-direction: row-reverse;
+}
+.nav-li {
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    list-style: none;
+}
+.atr-style {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+#nav-container {
+    background-color: #0d333b;
+}
+#nameLogo-img{
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.current-page{
+    background-color: #2da9ad;
+    border-radius: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
