@@ -1,16 +1,15 @@
 import "./Home.css";
-import {aboutMe} from "./HomeComp";
-import {aboutMe2} from "./HomeComp";
+import { aboutMe } from "./HomeComp";
+import { stickMenu } from "./HomeComp";
 
 
-const Home = () => {
+function Home() {
     return (
-        <div className="center-div home-container">
-           {aboutMe()}
-           {aboutMe2()}
+        <div className="home-container">
+            {stickMenu()}
+            {aboutMe()}
         </div>
-                
     );
- }
+}
 
- export default Home;
+export default Home;

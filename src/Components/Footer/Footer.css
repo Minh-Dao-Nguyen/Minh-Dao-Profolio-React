@@ -1,7 +1,8 @@
 #footer {
     display: flex;
     justify-content: center;
-    background-color: #0d333b;
+    /*background-color: #0d333b;*/
+    background-color: #121212;
 }
 
 #footer-location,

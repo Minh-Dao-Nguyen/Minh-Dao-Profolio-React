@@ -6,45 +6,36 @@
 }
 
 .home-container{
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background-color: black;
+    padding: 100px;
+
+    background-color: #121212;
+    
 }
 
-.aboutMe-cont1{
-    width: 450px;
-    height: 400px;
+.aboutMe-cont{
+    text-align: left;
+    width: 600px;
+    height: 350px;
     padding: 40px;
     color: white;
-    background-color: #282c34;
+    background-color: #0d0d0d;
     border-radius: 20px;
-
     margin-right: 40px;
-    
 }
 
 .name-text{
     font-size: 40px;
     font-weight: bold;
+    color: #0078d7;
 }
 
 .aboutMe-text {
     display: block;
-    font-size: 15px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 50px;
     margin-top: 10px; 
 }
 
-.aboutMe-cont2{
-    width: 450px;
-    height: 400px;
-    padding: 40px;
-    color: white;
-    background-color: #282c34;
-    border-radius: 20px;
-    
-    margin-left: 20px;
-}
 
 .resume-button{
     text-decoration: none;
