@@ -1,0 +1,47 @@
+.center-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sideMenu-container{
+    text-align: left;
+}
+
+.name-text{
+    font-size: 40px;
+    font-weight: bold;
+    color: #0078d7;
+}
+
+.aboutMe-text {
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 10px; 
+    color: white;
+}
+
+.sections-container{
+    padding-top: 10px;
+    text-align: left;
+}
+
+.section-option{
+    color: gray;
+    list-style: none;
+    margin-top: 30px;
+}
+
+
+.icons-container{
+}
+
+
+.linkIn-logo{
+    width: 30px;
+}
+
+.active{
+    color: #13fb03;
+}

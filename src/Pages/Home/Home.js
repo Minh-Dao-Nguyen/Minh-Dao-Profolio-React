@@ -1,13 +1,19 @@
 import "./Home.css";
 import { aboutMe } from "./HomeComp";
-import { stickMenu } from "./HomeComp";
+import SideMenu from "../../Components/Side Menu/SideMenu";
+import { ExperienceCont } from "./HomeComp";
 
 
 function Home() {
     return (
         <div className="home-container">
-            {stickMenu()}
-            {aboutMe()}
+            <div>
+                <SideMenu />
+            </div>
+            <div>
+                {aboutMe()}
+                <ExperienceCont />
+            </div>
         </div>
     );
 }

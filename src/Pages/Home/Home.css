@@ -1,4 +1,3 @@
-
 .center-div{
     display: flex;
     justify-content: center;
@@ -7,9 +6,10 @@
 
 .home-container{
     padding: 100px;
-
     background-color: #121212;
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .aboutMe-cont{
@@ -23,17 +23,27 @@
     margin-right: 40px;
 }
 
+.sideMenu-container{
+    text-align: left;
+}
+
 .name-text{
     font-size: 40px;
     font-weight: bold;
     color: #0078d7;
 }
+.greeding-text{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
 
 .aboutMe-text {
     display: block;
     font-size: 20px;
-    line-height: 50px;
+    line-height: 30px;
     margin-top: 10px; 
+    color: white;
 }
 
 
@@ -59,10 +69,18 @@
     width: 200px;
     height: 70px;
     padding: 20px;
+}
 
+.icons-container{
+    margin-top: 100px;
 }
 
 #face-photo{
     border-radius: 50%;
     width: 200px;
 }
+
+.linkIn-logo{
+    width: 50px;
+}
+

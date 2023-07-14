@@ -3,6 +3,7 @@
     justify-content: center;
     /*background-color: #0d333b;*/
     background-color: #121212;
+    padding: 20px;
 }
 
 #footer-location,
@@ -20,7 +21,7 @@
 
 .footer-title {
     font-size: 25px;
-    color: white;
+    color: #0078d7;
 }
 
 .footer-text {
@@ -29,4 +30,8 @@
 }
 .footer-logo{
     width: 50px;
+}
+
+.hidden{
+    display: none;
 }
