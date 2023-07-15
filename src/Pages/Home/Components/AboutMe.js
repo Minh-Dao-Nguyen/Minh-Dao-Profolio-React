@@ -1,0 +1,38 @@
+
+const styles = {
+    container: {
+        textAlign: 'left',
+        width: '700px',
+        height: '350px',
+        backgroundColor: '#0d0d0d',
+        marginRight: '30px',
+        marginBottom: '100px',
+        borderRadius: '20px',
+        padding: '30px',
+
+    },
+    text: {
+        color: 'white',
+        fontSize: '20px',
+        lineHeight: '30px',
+    },
+}
+
+function AboutMe() {
+    return(
+        <div style={styles.container}>
+            <p style={styles.text}>
+                I am a junior studying Computer Science student at Texas A&M University with a minor in Statistic and Cybersecurity.
+            </p>
+            <p style={styles.text}>
+                I have worked with Web Application on a large scale through my internship, and 
+                I have been working as a Data analytics in the Higher Education industry for the past year. 
+                </p>
+            <p style={styles.text}>
+                I am looking forward to expand my knowledge and expereince in different fields of Computer Science.
+            </p>
+        </div>
+    );
+}
+
+export default AboutMe;

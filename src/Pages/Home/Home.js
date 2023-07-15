@@ -1,8 +1,7 @@
 import "./Home.css";
-import { aboutMe } from "./HomeComp";
+import AboutMe from "./Components/AboutMe";
 import SideMenu from "../../Components/Side Menu/SideMenu";
-import { ExperienceCont } from "./HomeComp";
-
+import ExperienceContainer from "./Components/ExperienceContainer";
 
 function Home() {
     return (
@@ -11,8 +10,8 @@ function Home() {
                 <SideMenu />
             </div>
             <div>
-                {aboutMe()}
-                <ExperienceCont />
+                <AboutMe />
+                <ExperienceContainer />
             </div>
         </div>
     );

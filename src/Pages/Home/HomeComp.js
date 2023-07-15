@@ -1,6 +1,5 @@
 import "./Home.css";
 import facePhoto from "../../Images/Image/face-photo.png";
-import SmallDisplayBox from "../../Components/Small Display Box/SmallDisplayBox";
 
 
 export function aboutMe() {
@@ -28,13 +27,7 @@ export function MainButtons() {
     );
 }
 
-export function ExperienceCont() {
-    return(
-        <div className="experience-container">
-            <SmallDisplayBox title="Resi" description="to be determined"/>
-            </div>
-    );
-}
+
 
 
 
