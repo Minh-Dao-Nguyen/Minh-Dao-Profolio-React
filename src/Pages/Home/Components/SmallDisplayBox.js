@@ -1,8 +1,10 @@
+import React from 'react';
 import textColor from "../../../styles/Color";
 
 const styles = {
     container: {
         textAlign: 'left',
+        marginBottom: '100px',
     },
     titaleText: {
         color: textColor.MainBlue,
@@ -14,12 +16,13 @@ const styles = {
         textAlign: 'left',
     },
     jobTitle: {
-        color: 'light-gray',
+        color: 'gray',
+        fontSize: '18px',
     },
     descriptionText: {
         color: 'white',
         marginTop: '10px',
-
+        lineHeight: '30px',
     },
     toolsContainer: {
     }
@@ -33,12 +36,39 @@ function SmallDisplayBox(props) {
                 <hr></hr>
             </div>
             <p style={styles.jobTitle}>{props.jobTitle}</p>
-            <p style={styles.descriptionText}> {props.description} </p>
+            <div style={styles.descriptionText}>
+                {makeDescriptionList(props.description)}
+            </div>
             <div className="tools-container">
 
             </div>
         </div>
     )
 }
+
+function makeDescriptionList(array) {
+    return (
+        <div>
+            <ul>
+                {array.map((item, index) => (
+                    <li key={index}>{item}</li>
+                ))}
+            </ul>
+        </div>
+    )
+}
+
+function makeToolsList(array) {
+    return (
+        <div>
+            <ul>
+                {array.map((item, index) => (
+                    <li key={index}>{item}</li>
+                ))}
+            </ul>
+        </div>
+    )
+}
+
 
 export default SmallDisplayBox;
