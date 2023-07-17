@@ -5,7 +5,10 @@
 }
 
 .home-container{
-    padding: 100px;
+    padding-bottom: 80px;
+    padding-top: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
     background-color: #121212;
     display: flex;
     flex-direction: row;

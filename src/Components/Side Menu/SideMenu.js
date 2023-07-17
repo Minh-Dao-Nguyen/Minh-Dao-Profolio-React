@@ -1,7 +1,8 @@
 import "./SideMenu.css";
 import LinkedinLogo from '../../Images/Logo/linkIn-logo.png'
 
-function SideMenu() {
+function SideMenu(props) {
+
     return (
         <div className="sideMenu-container">
             <div id="aboutMe-text">
@@ -15,10 +16,18 @@ function SideMenu() {
             </div>
             <div className="sections-container">
                 <ul>
-                    <li className="section-option active"> About </li>
-                    <li className="section-option"> Experience </li>
-                    <li className="section-option"> Projects </li>
-                    <li className="section-option"> Others </li>
+                    <li className={`section-option ${props.section === 'about' ? 'section-active' : ''}`}>
+                        About
+                    </li>
+                    <li className={`section-option ${props.section === 'experience' ? 'section-active' : ''}`}>
+                        Experience
+                    </li>
+                    <li className={`section-option ${props.section === 'project' ? 'section-active' : ''}`}>
+                        Projects
+                    </li>
+                    <li className={`section-option ${props.section === 'other' ? 'section-active' : ''}`}>
+                        Others
+                    </li>
                 </ul>
             </div>
             <div className="icons-container">
