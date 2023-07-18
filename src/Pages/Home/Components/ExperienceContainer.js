@@ -1,23 +1,20 @@
 import SmallDisplayBox from "./SmallDisplayBox";
 import ExperienceDescription from "../../../Text Sources/ExperienceDescription";
-
-const tools = {
-    resi: ['Java', 'Dockers', 'Jenkins', 'Git', 'MySQL', 'TypeScript', 'React'],
-    academicInitiative: [],
-}
+import tools from "../../../Text Sources/ExperienceTools";
 
 function ExperienceContainer(){
     return(
-        <div className="experience-container">
+        <div>
             
             <SmallDisplayBox title="Resi Media, LLC" 
             jobTitle="Software Engineer Intern" 
             description={ExperienceDescription.resi}
-            tools = {tools}/>
+            tools = {tools.Resi}/>
 
             <SmallDisplayBox title="Texas A&M Office for Academic Innovation" 
-            jobTitle="Support Specialist (Front-End Development and Data Analytics" 
-            description={ExperienceDescription.academicInitiative}/>
+            jobTitle="Support Specialist (Front-End Development and Data Analytics)" 
+            description={ExperienceDescription.academicInitiative}
+            tools = {tools.AcademicInnovation}/>
             </div>
     );
 }

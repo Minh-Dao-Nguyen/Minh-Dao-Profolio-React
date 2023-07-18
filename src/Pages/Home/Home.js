@@ -2,8 +2,9 @@ import { useState, useEffect } from "react";
 
 import "./Home.css";
 import AboutMe from "./Components/AboutMe";
-import SideMenu from "../../Components/Side Menu/SideMenu";
+import SideMenu from "./Components/SideMenu";
 import ExperienceContainer from "./Components/ExperienceContainer";
+import MiniProjectContainer from "./Components/MiniProjectContainer";
 
 function Home() {
     const [activeSection, setActiveSection] = useState('about');
@@ -33,6 +34,7 @@ function Home() {
             <div>
                 <AboutMe />
                 <ExperienceContainer />
+                <MiniProjectContainer/>
             </div>
         </div>
     );

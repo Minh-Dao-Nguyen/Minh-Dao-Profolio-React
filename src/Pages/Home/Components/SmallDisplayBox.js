@@ -6,7 +6,7 @@ const styles = {
         textAlign: 'left',
         marginBottom: '100px',
     },
-    titaleText: {
+    titleText: {
         color: textColor.MainBlue,
         fontSize: '25px',
         fontWeight: 'bold',
@@ -25,13 +25,30 @@ const styles = {
         lineHeight: '30px',
     },
     toolsContainer: {
+        display: 'flex',
+        width: '100%',        
+        justifyContent: 'left',
+        flowDirection: 'row',
+        paddingTop: '10px',
+    },
+    toolCont: {
+        color: 'white',
+        backgroundColor: '#231f63',
+        marginRight: '10px',
+        textAlign: 'center',
+        borderRadius: '10px',
+        paddingTop: '5px',
+        paddingBottom: '5px',
+        paddingLeft: '10px',
+        paddingRight: '10px',
+        opacity: '0.9',
     }
 }
 
 function SmallDisplayBox(props) {
     return (
         <div style={styles.container}>
-            <p style={styles.titaleText}> {props.title} </p>
+            <p style={styles.titleText}> {props.title} </p>
             <div style={styles.lineBreak}>
                 <hr></hr>
             </div>
@@ -39,8 +56,8 @@ function SmallDisplayBox(props) {
             <div style={styles.descriptionText}>
                 {makeDescriptionList(props.description)}
             </div>
-            <div className="tools-container">
-
+            <div style={styles.toolsContainer}>
+                {makeToolsList(props.tools)}
             </div>
         </div>
     )
@@ -60,13 +77,11 @@ function makeDescriptionList(array) {
 
 function makeToolsList(array) {
     return (
-        <div>
-            <ul>
+        <>
                 {array.map((item, index) => (
-                    <li key={index}>{item}</li>
+                    <div style={styles.toolCont} key={index}>{item}</div>
                 ))}
-            </ul>
-        </div>
+        </>
     )
 }
 

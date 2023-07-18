@@ -1,5 +1,5 @@
 import "./SideMenu.css";
-import LinkedinLogo from '../../Images/Logo/linkIn-logo.png'
+import LinkedinLogo from '../../../Images/Logo/linkIn-logo.png'
 
 function SideMenu(props) {
 
@@ -11,7 +11,7 @@ function SideMenu(props) {
                     Texas A&M Computer Science
                 </p>
                 <p className="reveal-typeText aboutMe-text">
-                    Software Engineer, Machine Learning, Data analytics.
+                    Software Engineer, ML, Data analytics.
                 </p>
             </div>
             <div className="sections-container">
