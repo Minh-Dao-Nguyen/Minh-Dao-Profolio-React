@@ -1,35 +1,39 @@
-import nameLogo from '../../Images/Logo/name-logo.png'
 import './NavBar.css'
-import { Route, Routes, Link } from 'react-router-dom';
-import Home from '../../Pages/Home/Home';
+import { NavLink } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
-const NameLogo = () => {
-    return(
-        <div id="nameLogo-cont">
-                    <img id="nameLogo-img" src={nameLogo} alt='name logo' />
-                </div>
-    );
+const styles = {
+    container: {
+        display: 'flex',
+    },
+    navStyle: {
+        textDecoration: 'none',
+        color: '#0078d7',
+        fontSize: '20px',
+        width: '100px',
+        display: 'block',
+        borderRadius: "12px",
+        marginRight: '40px',
+        height: '30px',
+
+    },
+    currentPage: {
+        backgroundColor: "#2da9ad",
+        fontweight: 'bold',
+    },
 }
 
+
+
 function NavBar() {
+
     return (
         <div id="nav-container">
             <nav id="navBar">
-                <div className="ul-cont">
-                    <ul id="navLi-container">
-                        <li className="nav-li">
-                            <Link to="/" className='link-style'>Home</Link>
-                        </li>
-                        <li className="nav-li">
-                            <Link to="/projects" className='link-style'>Projects</Link>
-                        </li>
-                        <li className="nav-li">
-                            <Link to="/app" className='link-style'>App</Link>
-                        </li>
-                        <li className="nav-li">
-                            <Link to="/photography&art" className='link-style'>Photography/Art</Link>
-                        </li>
-                    </ul>
+                <div style={styles.container}>
+                    <NavLink to="/" style={styles.navStyle} activeStyle={styles.currentPage} >Home</NavLink>
+                    <NavLink to="/projects" style={styles.navStyle} activeStyle={styles.currentPage}>Projects</NavLink>
+                    <NavLink to="/others" style={styles.navStyle} activeStyle={styles.currentPage}>Others</NavLink>
                 </div>
             </nav>
         </div>

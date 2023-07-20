@@ -1,5 +1,4 @@
 import ProjectContainer from "./Components/ProjectContainer";
-import ProjectDescription from "../../Text Sources/ProjectDescription";
 
 const styles = {
     ProjectContainer: {
@@ -12,8 +11,7 @@ const styles = {
 function Projects () {
     return (
         <div style={styles.ProjectContainer}>
-            <ProjectContainer title="Peronsal Website" 
-            description={ProjectDescription["Personal Website"]}/>
+            <ProjectContainer/>
         </div>
     );
 }

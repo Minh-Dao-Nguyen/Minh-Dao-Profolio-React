@@ -4,12 +4,12 @@ const styles = {
         textAlign: 'left',
         width: '700px',
         height: '350px',
-        backgroundColor: '#0d0d0d',
         marginRight: '30px',
         marginBottom: '100px',
         borderRadius: '20px',
         padding: '30px',
-
+        backgroundColor: '#222222',
+        boxShadow: '50px rgba(0,0,0,0.75)',
     },
     text: {
         color: 'white',

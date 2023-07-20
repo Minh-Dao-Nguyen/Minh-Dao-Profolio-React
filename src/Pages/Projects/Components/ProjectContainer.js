@@ -1,13 +1,17 @@
 import textColor from "../../../styles/Color";
-
+import ProjectBox from "./ProjectBox";
+import folder from "../../../Images/Image/folder.png";
 
 const styles = {
     container: {
-        textAlign: 'center',
+        display: 'block',
         marginBottom: '100px',
-        width: '500px',
-        padding: '30px',
-        margin: '50px',
+
+    },
+    boxContainer: {
+        display: 'flex',
+        flowDirection: 'row',
+        justifyContent: 'center',
     },
     titaleText: {
         color: textColor.MainBlue,
@@ -31,16 +35,35 @@ const styles = {
     }
 }
 
-function ProjectContainer(props){
+function ProjectContainer(props) {
     return (
-        <div className={styles.container}>
-            <p style={styles.titaleText}> {props.title} </p>
-            <div style={styles.lineBreakContainer}>
-                <hr style={styles.lineBreak}></hr>
+        <div style={styles.container}>
+            <div style={styles.boxContainer}>
+                <ProjectBox title="eICU mortality prediction"
+                    image={folder}
+                    link="/eICU-ML"
+                />
+                <ProjectBox title="Restaurant’s dishes managing system"
+                    image={folder}
+                />
+                <ProjectBox title="C++ Custom Libraries"
+                    image={folder}
+                    link="/lib-C++"
+                />
             </div>
-            <p style={styles.descriptionText}> {props.description}</p>
-            <div className="tools-container">
-
+            <div style={styles.boxContainer}>
+                <ProjectBox title="Enterprise Email Communication"
+                    image={folder}
+                    link="/email-communication"
+                />
+                <ProjectBox title="Digital Learning Expo 2022 Website"
+                    image={folder}
+                    link="/DLE-2022"
+                />
+                <ProjectBox title="University Proctoring System Evaluation"
+                    image={folder}
+                    link="/proctoring-system"
+                />
             </div>
         </div>
     );

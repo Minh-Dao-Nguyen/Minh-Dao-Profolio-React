@@ -4,7 +4,7 @@ import textColor from "../../../styles/Color";
 const styles = {
     container: {
         textAlign: 'left',
-        marginBottom: '100px',
+        marginBottom: '50px',
     },
     titleText: {
         color: textColor.MainBlue,
@@ -32,8 +32,9 @@ const styles = {
         paddingTop: '10px',
     },
     toolCont: {
-        color: 'white',
-        backgroundColor: '#231f63',
+        color: 'black',
+        fontWeight: 'bold',
+        backgroundColor: '#01FF8E',
         marginRight: '10px',
         textAlign: 'center',
         borderRadius: '10px',

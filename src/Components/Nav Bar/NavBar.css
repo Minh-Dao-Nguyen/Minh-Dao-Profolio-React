@@ -1,6 +1,6 @@
 #nav-container {
     margin-top: 20px; 
-    background-color: #1a1a1a;
+    background-color: #121212;
 
 }
 
@@ -33,7 +33,15 @@
     margin-top: 10px;
     margin-left: 40px;
 }
-.current-page{
+
+.currentPage {
+    background-color: #2da9ad;
+    border-radius: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.active{
     background-color: #2da9ad;
     border-radius: 12px;
     padding-top: 10px;
