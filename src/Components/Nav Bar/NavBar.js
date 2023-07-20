@@ -1,6 +1,5 @@
 import './NavBar.css'
 import { NavLink } from 'react-router-dom';
-import { useEffect, useState } from 'react';
 
 const styles = {
     container: {

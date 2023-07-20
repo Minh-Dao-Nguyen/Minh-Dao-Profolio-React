@@ -1,10 +1,23 @@
 import { useState, useEffect } from "react";
 
-import "./Home.css";
+import Entrance from "./Components/Entrance";
 import AboutMe from "./Components/AboutMe";
 import SideMenu from "./Components/SideMenu";
 import ExperienceContainer from "./Components/ExperienceContainer";
 import MiniProjectContainer from "./Components/MiniProjectContainer";
+
+const styles = {
+    homeContainer: {
+        paddingBottom: '80px',
+        paddingTop: '40px',
+        paddingLeft: '100px',
+        paddingRight: '100px',
+        backgroundColor: '#121212',
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+    }
+}
 
 function Home() {
     const [activeSection, setActiveSection] = useState('about');
@@ -27,7 +40,7 @@ function Home() {
     }, [activeSection]);
 
     return (
-        <div className="home-container">
+        <div style={styles.homeContainer}>
             <div>
                 <SideMenu section={activeSection}/>
             </div>

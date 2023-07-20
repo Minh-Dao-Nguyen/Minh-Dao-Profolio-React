@@ -5,6 +5,8 @@ const styles = {
         paddingTop: '50px',
         paddingRight: '100px',
         paddingLeft: '100px',
+        paddingBottom: '50px',
+        backgroundColor: '#121212',
     }
 }
 

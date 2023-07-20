@@ -13,10 +13,11 @@ const styles = {
         margin: '20px',
     },
     imageContainer:{
+        display: 'flex',
 
     },
     image: {
-        width: '50px',
+        width: '60px',
 
     },
     title:{
@@ -27,8 +28,16 @@ const styles = {
         fontsize: '25px',
         fontWeight: 'bold',
     },
-    linkButton: {
+    description: {
         color: 'white',
+        marginBottom: '20px',
+        textAlign: 'left',
+    },
+    linkButtonContainer: {
+        display: 'flex',
+    },
+    linkButton: {
+        color: 'purple',
         textDecoration: 'none',
         fontSize: '15px',
     },    
@@ -45,7 +54,10 @@ function ProjectBox(props) {
         <div style={styles.title}>
             {props.title}
         </div>
-        <div>
+        <div style={styles.description}>
+            {props.description}
+        </div>
+        <div  style={styles.linkButtonContainer}>
             <Link style={styles.linkButton} to={"/projects" + props.link}>Learn More</Link>
         </div>
     </div>
