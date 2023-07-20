@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import textColor from "../../../styles/Color";
+import { useState } from "react";
 
 const styles = {
     container: {
@@ -12,7 +13,7 @@ const styles = {
         paddingBottom: '40px',
         margin: '20px',
     },
-    imageContainer:{
+    imageContainer: {
         display: 'flex',
 
     },
@@ -20,7 +21,7 @@ const styles = {
         width: '60px',
 
     },
-    title:{
+    title: {
         color: textColor.MainBlue,
         textAlign: 'left',
         marginTop: '20px',
@@ -35,33 +36,60 @@ const styles = {
     },
     linkButtonContainer: {
         display: 'flex',
+        marginTop: '40px',
     },
     linkButton: {
-        color: 'purple',
+        color: '#b4fc83',
         textDecoration: 'none',
         fontSize: '15px',
-    },    
+    },
 }
 
 function ProjectBox(props) {
-  return (
-    <div style={styles.container}>
-        <div>
-            <div style={styles.imageContainer}>
-                <img style={styles.image} src={props.image} alt="" />
+    const [isHover, setIsHover] = useState(false);
+    
+    const handleMouseEnter = () => {
+        setIsHover(true);
+    };
+
+    const handleMouseLeave = () => {
+        setIsHover(false);
+    };
+
+    const boxStyle = {
+        width: '250px',
+        backgroundColor: isHover ? '#256566' : '',
+        transform: isHover ? 'scale(1.1)' : '',
+        transition: 'all 0.2s ease-in-out',
+        border: '1px solid white',
+        borderRadius: '10px',
+        paddingLeft: '40px',
+        paddingRight: '40px',
+        paddingTop: '40px',
+        paddingBottom: '40px',
+        margin: '20px',
+    }
+
+    return (
+        <div style={boxStyle}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}>
+            <div>
+                <div style={styles.imageContainer}>
+                    <img style={styles.image} src={props.image} alt="" />
+                </div>
+            </div>
+            <div style={styles.title}>
+                {props.title}
+            </div>
+            <div style={styles.description}>
+                {props.description}
+            </div>
+            <div style={styles.linkButtonContainer}>
+                <Link style={styles.linkButton} to={"/projects" + props.link}>Learn More</Link>
             </div>
         </div>
-        <div style={styles.title}>
-            {props.title}
-        </div>
-        <div style={styles.description}>
-            {props.description}
-        </div>
-        <div  style={styles.linkButtonContainer}>
-            <Link style={styles.linkButton} to={"/projects" + props.link}>Learn More</Link>
-        </div>
-    </div>
-  );
+    );
 }
 
 export default ProjectBox;

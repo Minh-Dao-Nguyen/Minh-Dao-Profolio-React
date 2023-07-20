@@ -7,6 +7,9 @@ import ExperienceContainer from "./Components/ExperienceContainer";
 import MiniProjectContainer from "./Components/MiniProjectContainer";
 
 const styles = {
+    container: {
+        display: 'block',
+    },
     homeContainer: {
         paddingBottom: '80px',
         paddingTop: '40px',
@@ -16,7 +19,15 @@ const styles = {
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'space-between',
-    }
+    },
+    sideMenuContainer: {
+        position: 'sticky',
+        top: '0',
+        left: '0',
+        flex: 'none',
+        
+    },
+
 }
 
 function Home() {
@@ -40,14 +51,21 @@ function Home() {
     }, [activeSection]);
 
     return (
-        <div style={styles.homeContainer}>
-            <div>
-                <SideMenu section={activeSection}/>
+        <div>
+            <div style={styles.container}>
+                <Entrance />
             </div>
-            <div>
-                <AboutMe />
-                <ExperienceContainer />
-                <MiniProjectContainer/>
+            <div  style={styles.container}>
+                <div style={styles.homeContainer}>
+                    <div style={styles.sideMenuContainer}>
+                        <SideMenu section={activeSection} />
+                    </div>
+                    <div>
+                        <AboutMe />
+                        <ExperienceContainer />
+                        <MiniProjectContainer />
+                    </div>
+                </div>
             </div>
         </div>
     );

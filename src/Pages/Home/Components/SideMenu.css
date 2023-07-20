@@ -6,7 +6,7 @@
 
 .sideMenu-container{
     text-align: left;
-    position: fixed;
+    position: sticky;
 }
 
 .name-text{
