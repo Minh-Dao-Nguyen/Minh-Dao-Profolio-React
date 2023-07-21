@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import textColor from "../../../styles/Color";
 import { useState } from "react";
+import MakeToolsList from "../../../Components/Functions/MakeToolsList";
 
 const styles = {
     container: {
@@ -34,20 +35,18 @@ const styles = {
         marginBottom: '20px',
         textAlign: 'left',
     },
-    linkButtonContainer: {
-        display: 'flex',
-        marginTop: '40px',
-    },
-    linkButton: {
-        color: '#b4fc83',
+
+    linkContainer: {
         textDecoration: 'none',
-        fontSize: '15px',
     },
+    toolsContainer: {
+        display: 'flex',
+    }
 }
 
 function ProjectBox(props) {
     const [isHover, setIsHover] = useState(false);
-    
+
     const handleMouseEnter = () => {
         setIsHover(true);
     };
@@ -58,6 +57,7 @@ function ProjectBox(props) {
 
     const boxStyle = {
         width: '250px',
+        height: '250px',
         backgroundColor: isHover ? '#256566' : '',
         transform: isHover ? 'scale(1.1)' : '',
         transition: 'all 0.2s ease-in-out',
@@ -71,25 +71,29 @@ function ProjectBox(props) {
     }
 
     return (
-        <div style={boxStyle}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
-            <div>
-                <div style={styles.imageContainer}>
-                    <img style={styles.image} src={props.image} alt="" />
+        <Link style={styles.linkContainer} to={"/projects" + props.link}>
+            <div style={boxStyle}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}>
+                <div>
+                    <div style={styles.imageContainer}>
+                        <img style={styles.image} src={props.image} alt="" />
+                    </div>
+                </div>
+                <div style={styles.title}>
+                    {props.title}
+                </div>
+                <div style={styles.description}>
+                    {props.description}
+                </div>
+                <div style={styles.toolsContainer}>
+                    {MakeToolsList(props.tools)}
                 </div>
             </div>
-            <div style={styles.title}>
-                {props.title}
-            </div>
-            <div style={styles.description}>
-                {props.description}
-            </div>
-            <div style={styles.linkButtonContainer}>
-                <Link style={styles.linkButton} to={"/projects" + props.link}>Learn More</Link>
-            </div>
-        </div>
+        </Link>
     );
 }
+
+
 
 export default ProjectBox;

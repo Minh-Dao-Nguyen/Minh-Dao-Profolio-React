@@ -7,6 +7,7 @@
 .sideMenu-container{
     text-align: left;
     position: sticky;
+    top: 300px;
 }
 
 .name-text{
@@ -26,6 +27,7 @@
 .sections-container{
     padding-top: 10px;
     text-align: left;
+    width: 150px;
 }
 
 .section-option{
@@ -43,6 +45,8 @@
 
 .icons-container{
     margin-top: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 

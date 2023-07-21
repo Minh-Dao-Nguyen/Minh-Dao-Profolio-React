@@ -1,5 +1,6 @@
 import React from 'react';
 import textColor from "../../../styles/Color";
+import MakeToolsList from '../../../Components/Functions/MakeToolsList';
 
 const styles = {
     container: {
@@ -58,7 +59,7 @@ function SmallDisplayBox(props) {
                 {makeDescriptionList(props.description)}
             </div>
             <div style={styles.toolsContainer}>
-                {makeToolsList(props.tools)}
+                {MakeToolsList(props.tools)}
             </div>
         </div>
     )
@@ -76,15 +77,6 @@ function makeDescriptionList(array) {
     )
 }
 
-function makeToolsList(array) {
-    return (
-        <>
-                {array.map((item, index) => (
-                    <div style={styles.toolCont} key={index}>{item}</div>
-                ))}
-        </>
-    )
-}
 
 
 export default SmallDisplayBox;

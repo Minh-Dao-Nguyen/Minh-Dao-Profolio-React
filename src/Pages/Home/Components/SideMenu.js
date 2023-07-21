@@ -5,15 +5,7 @@ function SideMenu(props) {
 
     return (
         <div className="sideMenu-container">
-            <div id="aboutMe-text">
-                <p className="name-text reveal-typeText">Minh Dao Nguyen</p>
-                <p className="reveal-typeText aboutMe-text">
-                    Texas A&M Computer Science
-                </p>
-                <p className="reveal-typeText aboutMe-text">
-                    Software Engineer, ML, Data analytics.
-                </p>
-            </div>
+
             <div className="sections-container">
                 <ul>
                     <li className={`section-option ${props.section === 'about' ? 'section-active' : ''}`}>

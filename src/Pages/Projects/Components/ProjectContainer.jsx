@@ -44,16 +44,19 @@ function ProjectContainer(props) {
                     image={folder}
                     description={TinyProjectDescription.eICUML}
                     link="/eICU-ML"
+                    tools={['Python', 'Latex']}
                 />
                 <ProjectBox title="Restaurant’s dishes managing system"
                     image={folder}
                     description={TinyProjectDescription.dishManage}
                     link="/dish-manage"
+                    tools={['Java', 'SQL']}
                 />
                 <ProjectBox title="C++ Custom Libraries"
                     image={folder}
                     description={TinyProjectDescription.cPlusLib}
                     link="/lib-C++"
+                    tools={['C++']}
                 />
             </div>
             <div style={styles.boxContainer}>
@@ -61,16 +64,19 @@ function ProjectContainer(props) {
                     image={folder}
                     description={TinyProjectDescription.emailCom}
                     link="/email-communication"
+                    tools={['HTML/CSS']}
                 />
                 <ProjectBox title="Digital Learning Expo 2022 Website"
                     image={folder}
                     description={TinyProjectDescription.expo22}
                     link="/DLE-2022"
+                    tools={['HTML/CSS', 'JavaScript']}
                 />
                 <ProjectBox title="University Proctoring System Evaluation"
                     image={folder}
                     description={TinyProjectDescription.uniProtor}
                     link="/proctoring-system"
+                    tools={['Tableau']}
                 />
             </div>
         </div>

@@ -21,10 +21,6 @@ const styles = {
         justifyContent: 'space-between',
     },
     sideMenuContainer: {
-        position: 'sticky',
-        top: '0',
-        left: '0',
-        flex: 'none',
         
     },
 
