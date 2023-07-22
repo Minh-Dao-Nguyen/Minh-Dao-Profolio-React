@@ -1,4 +1,5 @@
 import './SideMenu.css'
+import {motion} from 'framer-motion'
 
 const styles ={
     container: {
@@ -8,14 +9,16 @@ const styles ={
         lineHeight: '30px',
         marginTop: '130px', 
         color: 'white',
-
     },
 }
 
 
 function Introduction() {
     return(
-        <div id="aboutMe-text" style={styles.container}>
+        <motion.div id="aboutMe-text" style={styles.container}
+         initial={{x: '-100vw'}}
+         animate={{x:0}}
+         transition={{type: 'tween'}}>
                 <p className="name-text reveal-typeText">Minh Dao Nguyen</p>
                 <p className="reveal-typeText aboutMe-text">
                     Texas A&M Computer Science
@@ -23,7 +26,7 @@ function Introduction() {
                 <p className="reveal-typeText aboutMe-text">
                     Software Engineer, ML, Data analytics.
                 </p>
-            </div>
+            </motion.div>
     );
 }
 

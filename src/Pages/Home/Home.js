@@ -32,11 +32,11 @@ function Home() {
     useEffect(() => {
         const handleScroll = () => {
             const currentScrollY = window.scrollY;
-            if (currentScrollY < 500) {
+            if (currentScrollY < 1000) {
                 setActiveSection('about');
-            } else if (currentScrollY < 1000) {
-                setActiveSection('experience');
             } else if (currentScrollY < 1500) {
+                setActiveSection('experience');
+            } else if (currentScrollY < 2000) {
                 setActiveSection('project');
             } else {
                 setActiveSection('other');
