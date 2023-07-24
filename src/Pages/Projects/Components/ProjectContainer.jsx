@@ -60,6 +60,12 @@ function ProjectContainer(props) {
                 />
             </div>
             <div style={styles.boxContainer}>
+            <ProjectBox title="C++ Custom Libraries"
+                    image={folder}
+                    description={TinyProjectDescription.cPlusLib}
+                    link="/lib-C++"
+                    tools={['C++']}
+                />
                 <ProjectBox title="Enterprise Email Communication"
                     image={folder}
                     description={TinyProjectDescription.emailCom}
@@ -72,13 +78,15 @@ function ProjectContainer(props) {
                     link="/DLE-2022"
                     tools={['HTML/CSS', 'JavaScript']}
                 />
-                <ProjectBox title="University Proctoring System Evaluation"
+            </div>
+            <div style={styles.boxContainer}>
+            <ProjectBox title="University Proctoring System Evaluation"
                     image={folder}
                     description={TinyProjectDescription.uniProtor}
                     link="/proctoring-system"
                     tools={['Tableau']}
                 />
-            </div>
+                </div>
         </div>
     );
 }

@@ -1,15 +1,27 @@
 import textColor from "../../../styles/Color";
-
+import gotoIcon from "../../../Images/icon/gotoIcon.png";
+import { Link } from "react-router-dom";
+import WhiteGithubLogo from "../../../Images/Logo/WhiteGithubLogo.png"
 
 const styles = {
     container: {
         textAlign: 'left',
-        marginBottom: '100px',
+        marginBottom: '80px',
     },
-    titaleText: {
+    titleText: {
         color: textColor.MainBlue,
         fontSize: '20px',
         fontWeight: 'bold',
+    },
+    titleContainer: {
+        display: 'flex',
+        justifyContent: 'left',
+    },
+    gotoIcon: {
+        width: '25px',
+        height: '25px',
+        marginTop: '15px',
+        marginLeft: '15px',
     },
     lineBreak: {
         width: '200px',
@@ -27,7 +39,7 @@ const styles = {
     },
     toolsContainer: {
         display: 'flex',
-        width: '100%',        
+        width: '100%',
         justifyContent: 'left',
         flowDirection: 'row',
         paddingTop: '10px',
@@ -48,9 +60,15 @@ const styles = {
 
 
 function TinyDisplayBox(props) {
-    return ( 
+    return (
         <div style={styles.container}>
-            <p style={styles.titaleText}> {props.title} </p>
+            <div style={styles.titleContainer}>
+                <p style={styles.titleText}> {props.title} </p>
+                <Link to={props.link}>
+                    <img src={gotoIcon} style={styles.gotoIcon} alt="goto icon" />
+                    <img src={WhiteGithubLogo} style={styles.gotoIcon} alt="goto icon" />
+                </Link>
+            </div>
             <div style={styles.lineBreak}>
                 <hr></hr>
             </div>
@@ -68,9 +86,9 @@ function TinyDisplayBox(props) {
 function makeToolsList(array) {
     return (
         <>
-                {array.map((item, index) => (
-                    <div style={styles.toolCont} key={index}>{item}</div>
-                ))}
+            {array.map((item, index) => (
+                <div style={styles.toolCont} key={index}>{item}</div>
+            ))}
         </>
     )
 }

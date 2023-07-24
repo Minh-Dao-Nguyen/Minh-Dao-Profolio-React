@@ -1,9 +1,9 @@
-
+import PhotographyGallery from "./Components/PhotographyGallery";
 
 function Others () {
     return (
         <div>
-            <h1>Others</h1>
+            <PhotographyGallery />
         </div>
     )
 }

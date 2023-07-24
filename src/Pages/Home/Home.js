@@ -5,6 +5,7 @@ import AboutMe from "./Components/AboutMe";
 import SideMenu from "./Components/SideMenu";
 import ExperienceContainer from "./Components/ExperienceContainer";
 import MiniProjectContainer from "./Components/MiniProjectContainer";
+import OthersSection from "./Components/OthersSection";
 
 const styles = {
     container: {
@@ -60,6 +61,7 @@ function Home() {
                         <AboutMe />
                         <ExperienceContainer />
                         <MiniProjectContainer />
+                        <OthersSection/>
                     </div>
                 </div>
             </div>
