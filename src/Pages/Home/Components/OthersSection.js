@@ -19,7 +19,7 @@ const styles ={
 function OthersSection () {
     return (
         <div style={styles.container}>
-            <Link style={styles.link} to="/others" onClick={() => window.scroll(0, 0 )}>
+            <Link style={styles.link} to="/others/photography" onClick={() => window.scroll(0, 0 )}>
                 <div style={styles.buttonContainer}> PhotoGraphy </div>
             </Link>
         </div>

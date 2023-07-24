@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-
 import Entrance from "./Components/Entrance";
 import AboutMe from "./Components/AboutMe";
 import SideMenu from "./Components/SideMenu";

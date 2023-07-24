@@ -52,11 +52,11 @@ function ProjectContainer(props) {
                     link="/dish-manage"
                     tools={['Java', 'SQL']}
                 />
-                <ProjectBox title="C++ Custom Libraries"
+                <ProjectBox title="Personal Website"
                     image={folder}
                     description={TinyProjectDescription.cPlusLib}
-                    link="/lib-C++"
-                    tools={['C++']}
+                    link="/"
+                    tools={['React', 'AWS', 'Docker']}
                 />
             </div>
             <div style={styles.boxContainer}>
