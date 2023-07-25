@@ -23,15 +23,15 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/projects' element={<Projects />} />
-          <Route path='/projects/eICU-ML' element={<EICU_ML/>} />
-          <Route path='/projects/dish-manage' element={<DishManager/>} />
-          <Route path='/projects/lib-C++' element={<CplusLib/>} />
-          <Route path='/projects/email-communication' element={<EmailCom/>} />
-          <Route path='/projects/DLE-2022' element={<DLE_EXPO/>} />
+          <Route path='/projects/eICU-ML' element={<EICU_ML />} />
+          <Route path='/projects/dish-manage' element={<DishManager />} />
+          <Route path='/projects/lib-C++' element={<CplusLib />} />
+          <Route path='/projects/email-communication' element={<EmailCom />} />
+          <Route path='/projects/DLE-2022' element={<DLE_EXPO />} />
           <Route path='/app' element={<div>App</div>} />
-          <Route path='/others' element={<Others/>}>
-            <Route path='photography' element={<PhotographyGallery/>} />
-            </Route>
+          <Route path='/others' element={<Others />}>
+            <Route path='photography' element={<PhotographyGallery />} />
+          </Route>
         </Routes>
       </Router>
     </div>
