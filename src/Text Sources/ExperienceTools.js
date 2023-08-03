@@ -1,5 +1,5 @@
  const ExperienceTools = {
-    Resi: ['Java', 'Dockers', 'Jenkins', 'Git', 'MySQL', 'TypeScript', 'React'], 
+    Resi: ['Java', 'Docker', 'Jenkins', 'Git', 'MySQL', 'TypeScript', 'React'], 
     AcademicInnovation: [ 'Tableau', 'HTML/CSS', 'Microsoft Office'], 
     CTE: [],
  }
