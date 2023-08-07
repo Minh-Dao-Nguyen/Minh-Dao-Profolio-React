@@ -18,10 +18,10 @@ const styles = {
         backgroundColor: '#121212',
         display: 'flex',
         flexDirection: 'row',
-        justifyContent: 'space-between',
+        justifyContent: 'center',
     },
     sideMenuContainer: {
-        
+        marginRight: '100px',
     },
 
 }
