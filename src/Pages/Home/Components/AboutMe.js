@@ -1,3 +1,5 @@
+import RevealBottomUp from "../../../Animations/RevealBottomUp.tsx";
+import RevealSliding from "../../../Animations/RevealSliding.tsx";
 
 const styles = {
     container: {
@@ -20,6 +22,7 @@ const styles = {
 
 function AboutMe() {
     return(
+        <RevealSliding>
         <div style={styles.container}>
             <p style={styles.text}>
                 I am a junior studying Computer Science student at Texas A&M University with a minor in Statistic and Cybersecurity.
@@ -32,7 +35,25 @@ function AboutMe() {
                 I am looking forward to expand my knowledge and expereince in different fields of Computer Science.
             </p>
         </div>
+        </RevealSliding>
     );
 }
 
+/*
+function AboutMe() {
+    return (
+        <div style={styles.container}>
+            <p style={styles.text}>
+                Texas A&M Computer Science with minor in Statistic and Cybersecurity
+            </p>
+            <p style={styles.text}>
+                Experience:
+            </p>
+            <p style={styles.text}>
+                Full Stack Web Development, Data Engineer and Analytics, Machine Learning
+            </p>
+        </div>
+    );
+}
+*/
 export default AboutMe;

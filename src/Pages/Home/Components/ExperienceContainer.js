@@ -1,6 +1,7 @@
 import SmallDisplayBox from "./SmallDisplayBox";
 import ExperienceDescription from "../../../Text Sources/ExperienceDescription";
 import tools from "../../../Text Sources/ExperienceTools";
+import RevealBottomUp from "../../../Animations/RevealBottomUp.tsx";
 
 const styles = {
     container: {
@@ -15,20 +16,24 @@ const styles = {
     }
 }
 
-function ExperienceContainer(){
-    return(
-        <div style={styles.container}>
-            
-            <SmallDisplayBox title="Resi Media, LLC" 
-            jobTitle="Software Engineer Intern" 
-            description={ExperienceDescription.resi}
-            tools = {tools.Resi}/>
-
-            <SmallDisplayBox title="Texas A&M Office for Academic Innovation" 
-            jobTitle="Support Specialist (Front-End Development and Data Analytics)" 
-            description={ExperienceDescription.academicInitiative}
-            tools = {tools.AcademicInnovation}/>
+function ExperienceContainer() {
+    return (
+        <RevealBottomUp>
+            <div style={styles.container}>
+                <RevealBottomUp>
+                    <SmallDisplayBox title="Resi Media, LLC"
+                        jobTitle="Software Engineer Intern"
+                        description={ExperienceDescription.resi}
+                        tools={tools.Resi} />
+                </RevealBottomUp>
+                <RevealBottomUp>
+                    <SmallDisplayBox title="Texas A&M Office for Academic Innovation"
+                        jobTitle="Support Specialist (Front-End Development and Data Analytics)"
+                        description={ExperienceDescription.academicInitiative}
+                        tools={tools.AcademicInnovation} />
+                </RevealBottomUp>
             </div>
+        </RevealBottomUp>
     );
 }
 

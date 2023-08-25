@@ -7,9 +7,24 @@ interface Props {
 }
 
 
-const Reveal = ({ children, width = "fit-content" }: Props) => {
+const RevealBottomUp = ({ children, width = "fit-content" }: Props) => {
+    const ref = useRef(null);
+
+    const isInView = useInView(ref, {once: true});
+
+    const control = useAnimation();
+
+    useEffect(() => { 
+        if (isInView) {
+            control.start("visible");
+        }
+    }, [isInView]);
+
     return (
-        <div style={{ position: 'relative', width, overflow: 'hidden'}}>
+        <div ref={ref} style={{ 
+            position: 'relative', 
+            width, overflow: 'hidden',
+            }}>
             <motion.div
             variants={{
                 hidden: {
@@ -22,7 +37,8 @@ const Reveal = ({ children, width = "fit-content" }: Props) => {
                 }
             }}
             initial="hidden"
-            animate="visible"
+            animate={control}
+            transition={{duration: 0.5, delay: 0.25}}
             >
                 {children}
             </motion.div>
@@ -31,4 +47,4 @@ const Reveal = ({ children, width = "fit-content" }: Props) => {
 }
 
 
-export default Reveal;
+export default RevealBottomUp;
