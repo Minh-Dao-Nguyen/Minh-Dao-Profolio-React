@@ -21,20 +21,20 @@ const styles = {
 }
 
 function AboutMe() {
-    return(
+    return (
         <RevealSliding>
-        <div style={styles.container}>
-            <p style={styles.text}>
-                I am a junior studying Computer Science student at Texas A&M University with a minor in Statistic and Cybersecurity.
-            </p>
-            <p style={styles.text}>
-                I have worked with Web Application on a large scale through my internship, and 
-                I have been working as a Data analytics in the Higher Education industry for the past year. 
+            <div style={styles.container}>
+                <p style={styles.text}>
+                    I am a junior studying Computer Science student at Texas A&M University with a minor in Statistic and Cybersecurity.
                 </p>
-            <p style={styles.text}>
-                I am looking forward to expand my knowledge and expereince in different fields of Computer Science.
-            </p>
-        </div>
+                <p style={styles.text}>
+                    I have worked with Web Application on a large scale through my internship, and
+                    I have been working as a Data analytics in the Higher Education industry for the past year.
+                </p>
+                <p style={styles.text}>
+                    I am looking forward to expand my knowledge and expereince in different fields of Computer Science.
+                </p>
+            </div>
         </RevealSliding>
     );
 }
