@@ -2,6 +2,7 @@ import SmallDisplayBox from "./SmallDisplayBox";
 import ExperienceDescription from "../../../Text Sources/ExperienceDescription";
 import tools from "../../../Text Sources/ExperienceTools";
 import RevealBottomUp from "../../../Animations/RevealBottomUp.tsx";
+import "./PhoneScreen.css"
 
 const styles = {
     container: {
@@ -19,7 +20,7 @@ const styles = {
 function ExperienceContainer() {
     return (
         <RevealBottomUp>
-            <div style={styles.container}>
+            <div style={styles.container} className="main_container container_seperator">
                 <RevealBottomUp>
                     <SmallDisplayBox title="Resi Media, LLC"
                         jobTitle="Software Engineer Intern"

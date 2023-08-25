@@ -1,6 +1,7 @@
 //import backgroundGif from '../../../Images/Gif/background.gif'
 import techEarthGif from '../../../Images/Gif/techEarth.gif'
 import Introduction from './Introduction';
+import "./PhoneScreen.css"
 
 const styles = {
     container: {
@@ -24,7 +25,7 @@ function Entrance() {
     return (
         <div style={styles.container}>
             <Introduction />
-            <img style={styles.bgGif} src={techEarthGif} alt="background gif"/>
+            <img style={styles.bgGif} src={techEarthGif} alt="background gif" className="display_off_onSmall"/>
         </div>
     );
 }

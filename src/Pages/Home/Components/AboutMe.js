@@ -1,5 +1,6 @@
-import RevealBottomUp from "../../../Animations/RevealBottomUp.tsx";
+//import RevealBottomUp from "../../../Animations/RevealBottomUp.tsx";
 import RevealSliding from "../../../Animations/RevealSliding.tsx";
+ import "./PhoneScreen.css"
 
 const styles = {
     container: {
@@ -23,7 +24,7 @@ const styles = {
 function AboutMe() {
     return (
         <RevealSliding>
-            <div style={styles.container}>
+            <div style={styles.container} className="main_container small_padding container_seperator">
                 <p style={styles.text}>
                     I am a junior studying Computer Science student at Texas A&M University with a minor in Statistic and Cybersecurity.
                 </p>

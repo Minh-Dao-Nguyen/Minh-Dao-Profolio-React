@@ -1,0 +1,36 @@
+/* for phone screen */
+@media (max-width: 480px) {
+    .main_container{
+        width: 100% !important;
+        padding: 0px !important;   
+        margin: 0px !important;
+        height: auto !important;
+    }
+
+    .fit_container{
+        width: 100% !important;
+    }
+
+    .remove_margin_padding{
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+
+    .small_padding{
+        padding: 5px !important;
+    }
+    
+    .container_seperator{
+        margin-top: 25px !important;
+        margin-bottom: 25px !important;
+    }
+
+    .text_onSmall_style1{
+        font-size: 10px !important;
+    }
+    
+    .display_off_onSmall{
+        display: none !important;
+    }
+
+  }

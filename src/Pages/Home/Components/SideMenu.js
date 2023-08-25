@@ -1,11 +1,11 @@
 import "./SideMenu.css";
 import LinkedinLogo from '../../../Images/Logo/linkIn-logo.png'
+import "./PhoneScreen.css"
 
 function SideMenu(props) {
 
     return (
-        <div className="sideMenu-container">
-
+        <div className="sideMenu-container display_off_onSmall" >
             <div className="sections-container">
                 <ul>
                     <li className={`section-option ${props.section === 'about' ? 'section-active' : ''}`}>
