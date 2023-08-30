@@ -1,7 +1,7 @@
 //import backgroundGif from '../../../Images/Gif/background.gif'
 import techEarthGif from '../../../Images/Gif/techEarth.gif'
 import Introduction from './Introduction';
-import "./PhoneScreen.css"
+import "../../../styles/PhoneScreen.css";
 
 const styles = {
     container: {

@@ -2,7 +2,7 @@ import textColor from "../../../styles/Color";
 import gotoIcon from "../../../Images/icon/gotoIcon.png";
 import { Link } from "react-router-dom";
 import WhiteGithubLogo from "../../../Images/Logo/WhiteGithubLogo.png"
-import "./PhoneScreen.css"
+import "../../../styles/PhoneScreen.css";
 
 const styles = {
     container: {

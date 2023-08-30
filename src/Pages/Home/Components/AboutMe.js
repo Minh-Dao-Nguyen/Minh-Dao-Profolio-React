@@ -1,6 +1,6 @@
 //import RevealBottomUp from "../../../Animations/RevealBottomUp.tsx";
 import RevealSliding from "../../../Animations/RevealSliding.tsx";
-import "./PhoneScreen.css";
+import "../../../styles/PhoneScreen.css";
 
 const styles = {
   container: {

@@ -5,7 +5,7 @@ import SideMenu from "./Components/SideMenu";
 import ExperienceContainer from "./Components/ExperienceContainer";
 import MiniProjectContainer from "./Components/MiniProjectContainer";
 import OthersSection from "./Components/OthersSection";
-import "./Components/PhoneScreen.css"
+import "../../styles/PhoneScreen.css"
 
 const styles = {
     container: {

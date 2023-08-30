@@ -2,7 +2,7 @@ import SmallDisplayBox from "./SmallDisplayBox";
 import ExperienceDescription from "../../../Text Sources/ExperienceDescription";
 import tools from "../../../Text Sources/ExperienceTools";
 import RevealBottomUp from "../../../Animations/RevealBottomUp.tsx";
-import "./PhoneScreen.css"
+import "../../../styles/PhoneScreen.css";
 
 const styles = {
     container: {

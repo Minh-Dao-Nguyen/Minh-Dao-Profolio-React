@@ -1,6 +1,6 @@
 import "./SideMenu.css";
 import LinkedinLogo from '../../../Images/Logo/linkIn-logo.png'
-import "./PhoneScreen.css"
+import "../../../styles/PhoneScreen.css";
 
 function SideMenu(props) {
 
