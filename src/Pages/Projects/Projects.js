@@ -1,4 +1,5 @@
 import ProjectContainer from "./Components/ProjectContainer";
+import "../../styles/PhoneScreen.css"
 
 const styles = {
     ProjectContainer: {
@@ -12,7 +13,7 @@ const styles = {
 
 function Projects () {
     return (
-        <div style={styles.ProjectContainer}>
+        <div style={styles.ProjectContainer} className="small_padding">
             <ProjectContainer/>
         </div>
     );

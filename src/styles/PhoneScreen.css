@@ -33,4 +33,15 @@
         display: none !important;
     }
 
+    .component_stack_onSmall{
+        width: 100% !important;
+        display: block !important;
+    }
+
+    .container_stack_onSmall{
+        width: 100% !important;
+        display: block !important;
+        align-items: center !important;
+    }
+
   }

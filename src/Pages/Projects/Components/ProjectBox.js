@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import textColor from "../../../styles/Color";
 import { useState } from "react";
 import MakeToolsList from "../../../Components/Functions/MakeToolsList";
+import "../../../styles/PhoneScreen.css"
 
 const styles = {
     container: {
@@ -71,7 +72,8 @@ function ProjectBox(props) {
     }
 
     return (
-        <Link style={styles.linkContainer} to={"/projects" + props.link}>
+        <Link style={styles.linkContainer} to={"/projects" + props.link} 
+        className="component_stack_onSmall remove_margin_padding">
             <div style={boxStyle}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}>

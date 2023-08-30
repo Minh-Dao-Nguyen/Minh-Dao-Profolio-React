@@ -39,7 +39,8 @@ const styles = {
 function ProjectContainer(props) {
     return (
         <div style={styles.container}>
-            <div style={styles.boxContainer}>
+            <div style={styles.boxContainer} 
+            className="container_stack_onSmall remove_margin_padding small_padding">
                 <ProjectBox title="eICU mortality prediction"
                     image={folder}
                     description={TinyProjectDescription.eICUML}
@@ -59,7 +60,8 @@ function ProjectContainer(props) {
                     tools={['React', 'AWS', 'Docker']}
                 />
             </div>
-            <div style={styles.boxContainer}>
+            <div style={styles.boxContainer}
+            className="container_stack_onSmall remove_margin_padding small_padding">
             <ProjectBox title="C++ Custom Libraries"
                     image={folder}
                     description={TinyProjectDescription.cPlusLib}
