@@ -6,6 +6,7 @@ This project is inspired by my internship at Resi. The experience has taught me 
 
 
 In the project directory, you can run:
+### `npm install`
 
 ### `npm start`
 
