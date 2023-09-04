@@ -1,14 +1,15 @@
 //import backgroundGif from '../../../Images/Gif/background.gif'
-import techEarthGif from '../../../Images/Gif/techEarth.gif'
+
 import Introduction from './Introduction';
 import "../../../styles/PhoneScreen.css";
+import LogoEntrance from './LogoEntrance';
 
 const styles = {
     container: {
         width: '100%',
         marginTop: '50px',
         display: 'flex',
-        
+        marginBottom: '50px',
         justifyContent: 'center',
         //backgroundImage: `url(${backgroundGif})`,
         //height: '100vh',
@@ -25,7 +26,7 @@ function Entrance() {
     return (
         <div style={styles.container}>
             <Introduction />
-            <img style={styles.bgGif} src={techEarthGif} alt="background gif" className="display_off_onSmall"/>
+            <LogoEntrance />
         </div>
     );
 }
