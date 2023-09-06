@@ -8,6 +8,7 @@ import Others from './Pages/Others/Others';
 
 import PhotographyGallery from './Pages/Others/Components/PhotographyGallery';
 
+import ProjectManager from './Pages/Projects Page/ProjectManager';
 import EICU_ML from './Pages/Projects Page/EICU_ML';
 import DishManager from './Pages/Projects Page/DishManager';
 import CplusLib from './Pages/Projects Page/CplusLib';
@@ -23,6 +24,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/projects' element={<Projects />} />
+          <Route path='/projects/projects-management' element={<ProjectManager/>} />
           <Route path='/projects/eICU-ML' element={<EICU_ML />} />
           <Route path='/projects/dish-manage' element={<DishManager />} />
           <Route path='/projects/lib-C++' element={<CplusLib />} />

@@ -41,6 +41,12 @@ function ProjectContainer(props) {
         <div style={styles.container}>
             <div style={styles.boxContainer} 
             className="container_stack_onSmall remove_margin_padding small_padding">
+                <ProjectBox title="Personal Project Todo List"
+                    image={folder}
+                    description={TinyProjectDescription.projectManager}
+                    link="/projects-management"
+                    tools={['TypeScript', 'Java', 'Full Stack']}
+                />
                 <ProjectBox title="eICU mortality prediction"
                     image={folder}
                     description={TinyProjectDescription.eICUML}
@@ -52,12 +58,6 @@ function ProjectContainer(props) {
                     description={TinyProjectDescription.dishManage}
                     link="/dish-manage"
                     tools={['Java', 'SQL']}
-                />
-                <ProjectBox title="Personal Website"
-                    image={folder}
-                    description={TinyProjectDescription.cPlusLib}
-                    link="/"
-                    tools={['React', 'AWS', 'Docker']}
                 />
             </div>
             <div style={styles.boxContainer}
