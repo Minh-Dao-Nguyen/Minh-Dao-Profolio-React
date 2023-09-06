@@ -35,12 +35,12 @@ const styles = {
 const LogoEntrance = () => {
   return (
     <RevealSliding>
-    <div style={styles.container}>
+    <div style={styles.container} className="display_off_onSmall">
         <div style={styles.languagesContainer}> 
 
         </div>
         <div style={styles.nameLogoContainer}>
-        <img style={styles.nameLogo} src={MDLogo} alt="name logo" className="display_off_onSmall"/>
+        <img style={styles.nameLogo} src={MDLogo} alt="name logo"/>
         </div>
         <div style={styles.textContainer}>
             <p style={styles.text}>Turning abstracting solutions to functional code</p>

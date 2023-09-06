@@ -26,7 +26,7 @@ function AboutMe() {
     <RevealSliding>
       <div
         style={styles.container}
-        className="main_container small_padding container_seperator"
+        className="main_container small_padding container_seperator smaller_txt_1"
       >
         <p style={styles.text}>
           I am a junior studying Computer Science student at Texas A&M

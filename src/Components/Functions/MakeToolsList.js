@@ -1,3 +1,5 @@
+import "../../styles/PhoneScreen.css"
+
 const styles = {
     toolCont: {
         color: 'black',
@@ -21,7 +23,10 @@ function MakeToolsList(array) {
     return (
         <>
                 {array.map((item, index) => (
-                    <div style={styles.toolCont} key={index}>{item}</div>
+                    <div style={styles.toolCont} key={index}
+                    className="remove_margin_padding small_padding container_seperator_Rside" 
+                    >
+                        {item}</div>
                 ))}
         </>
     )

@@ -1,6 +1,7 @@
 import React from 'react';
 import textColor from "../../../styles/Color";
 import MakeToolsList from '../../../Components/Functions/MakeToolsList';
+import  "../../../styles/PhoneScreen.css"
 
 const styles = {
     container: {

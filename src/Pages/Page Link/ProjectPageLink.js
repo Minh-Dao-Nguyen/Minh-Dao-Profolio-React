@@ -1,6 +1,7 @@
 
 
 const ProjectPageLink = {
+    projectManager: "projects/project-management",
     eICU_ML: "projects/eICU-ML",
     PersonalWeb: "projects/personal-website",
     dishManager:"projects/dish-manager",

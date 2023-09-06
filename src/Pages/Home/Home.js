@@ -49,12 +49,12 @@ function Home() {
 
     return (
         <div className="main_container">
-            <div style={styles.container}>
+            <div style={styles.container} >
                 <Entrance />
             </div>
             <div  style={styles.container}>
-                <div style={styles.homeContainer}>
-                    <div style={styles.sideMenuContainer} className="remove_margin_padding">
+                <div style={styles.homeContainer} className="remove_margin_padding">
+                    <div style={styles.sideMenuContainer} className="display_off_onSmall">
                         <SideMenu section={activeSection} />
                     </div>
                     <div>
