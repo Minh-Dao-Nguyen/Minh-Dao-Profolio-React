@@ -1,4 +1,5 @@
 import textColor from "../../styles/Color";
+import doc from "./Documents/ML Report.pdf"
 
 const styles = {
     container: {
@@ -27,6 +28,11 @@ const styles = {
         width: '100px',
         borderRadius: '10px',
         padding: '10px',
+        margin: '10px',
+    },
+    descriptionText: {
+        color: 'white',
+        fontSize: '18px',
     }
 
 }
@@ -47,6 +53,16 @@ function EICU_ML() {
                 GitHub
             </div>
             </a>
+            <a href={doc} target="_blank"
+               style={styles.linkButton}>
+                <div>
+                    Doccument
+                </div>
+            </a>
+        </div>
+        <div style={styles.descriptionText}>
+            <p> This is a Machine Learning model built to predict patient mortality using data from eICU.</p>
+            <p> The program is written using Python and Jupyter notebook. Documentation of the development process is written in LaTex</p>
         </div>
     </div>
   );
